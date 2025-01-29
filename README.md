@@ -61,6 +61,16 @@ Um sistema web moderno para gerenciamento colaborativo de móveis e utensílios 
 | [![PostgreSQL][PostgreSQL-icon]][PostgreSQL-url] | Banco de dados relacional |
 | [![RLS][RLS-icon]](#) | Row Level Security |
 
+### Você pode testar a aplicação diretamente em nosso ambiente de demonstração:
+
+**URL de Acesso:** [https://meu-ape-demo.vercel.app](https://LINK_DO_DEPLOY) <!-- Insira seu link real aqui -->
+
+**Credenciais de Teste:**  
+🔐 **Login:** `teste@exemplo.com`  
+🔑 **Senha:** `senha123`
+
+> **Importante:** Esta é uma instância de demonstração com dados fictícios. Não utilize informações reais ou sensíveis.
+
 [React-icon]: https://img.shields.io/badge/React-20232A?logo=react
 [React-url]: https://reactjs.org/
 [TypeScript-icon]: https://img.shields.io/badge/TypeScript-3178C6?logo=typescript
