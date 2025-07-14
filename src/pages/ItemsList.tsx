@@ -44,7 +44,6 @@ export default function ItemsListPage() {
       }
       
       setIsEditing(false);
-      setEditingId(null);
     } finally {
       setFormLoading(false);
     }
