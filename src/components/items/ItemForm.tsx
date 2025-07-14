@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Plus } from 'lucide-react';
 import Card from '../ui/Card';
 import Input from '../ui/Input';
@@ -27,6 +27,14 @@ export default function ItemForm({
     initialData || { name: '', price: '', group_id: '' }
   );
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
+
+  useEffect(() => {
+    if (initialData) {
+      setFormData(initialData);
+    } else if (!isEditing) {
+      setFormData({ name: '', price: '', group_id: '' });
+    }
+  }, [initialData, isEditing]);
 
   const validateForm = () => {
     const newErrors: { [key: string]: string } = {};

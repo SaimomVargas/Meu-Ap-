@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../ui/Card';
+import { formatCurrency } from '../../utils/formatters';
 
 interface GroupSummary {
   group_name: string;
@@ -44,7 +45,7 @@ export default function SummaryTable({ data }: SummaryTableProps) {
                   {group.pending_items}
                 </div>
                 <div className="text-right font-medium text-gray-900">
-                  R$ {group.total_value.toFixed(2)}
+                  {formatCurrency(group.total_value)}
                 </div>
               </div>
             ))}
